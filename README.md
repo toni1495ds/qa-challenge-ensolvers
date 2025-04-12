@@ -6,7 +6,7 @@ This repository contains a suite of automated end-to-end (E2E) tests designed to
 
 ## 🧪 What is being tested?
 
-The test suite covers real-world user flows:
+The test suite covers:
 
 ### 📝 To-Do Flow
 
@@ -33,7 +33,7 @@ The test suite covers real-world user flows:
 
 ---
 
-## 🚀 How to run the tests
+## How to run the tests
 
 ### 1. Install dependencies
 
@@ -65,7 +65,7 @@ npx playwright test --headed
 npx playwright test tests/CreateToDo/index.ts
 ```
 
-## 🧼 Best Practices Followed
+## Practices Followed
 
 - Each test is modularized in its own isolated file
 - Global login handled in `beforeEach` for efficiency
@@ -75,7 +75,7 @@ npx playwright test tests/CreateToDo/index.ts
 
 ---
 
-## 💡 Notes
+## Notes
 
 - All tests assume default credentials: `user / user`
 - Tested on Chrome `v123`, macOS
