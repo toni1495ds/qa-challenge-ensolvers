@@ -90,4 +90,4 @@ npx playwright test tests/CreateToDo/index.ts
 
 ## Demo Video
 
-<video src="./assets/SuiteCompleted.mov" width="700" controls autoplay muted loop></video>
+https://github.com/hirelens-challenges/Sanmartin-478651/assets/SuiteCompleted.mov
