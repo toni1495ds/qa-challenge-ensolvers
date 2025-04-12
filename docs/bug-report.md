@@ -63,25 +63,6 @@ https://qa-challenge.ensolvers.com/to-do-item?page=1&sort=id,asc
 
 ---
 
-### [Bug] To Do Items - Pagination controls are unresponsive
-
-**Description:**  
-In the To Do Items interface, the pagination controls for navigating forward or backward between pages are not functional. Clicking the pagination arrows does not result in any change to the displayed items or trigger any visible response.
-
-**Relevant Links:**
-https://qa-challenge.ensolvers.com/to-do-item?page=1&sort=id,asc
-
-**Steps to reproduce:**
-
-1. Navigate to the To Do Items interface.
-2. Attempt to navigate to the next or previous page using the pagination arrows.
-3. Observe that the page does not update and the item list remains unchanged.
-4. Confirm that no network requests or changes in the interface occur after clicking the controls.
-
-**Environment:** https://qa-challenge.ensolvers.com — Chrome 123.0 on macOS — Logged in as user
-
----
-
 ### [Bug] Folder Deletion - Attempting to delete folder returns 500 error
 
 **Description:**  

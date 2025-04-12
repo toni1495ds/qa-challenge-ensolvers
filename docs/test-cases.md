@@ -169,11 +169,6 @@ Comment 1:
 Clicking the "Refresh List" button on the To-Do page triggers a backend fetch (visible in console logs as `toDoItem/fetch_entity_list`), but there is no visual indication or feedback for the user. Consider adding a loading indicator, toast, or some other confirmation to improve usability.
 -->
 
-<!--
-Comment 2:
-Pagination controls are visible on the To-Do Items page, but they do not seem to be interactive. Clicking on them has no visible effect on the list content. Consider reviewing their implementation or disabling them if not functional.
--->
-
 ---
 
 Folder Management
