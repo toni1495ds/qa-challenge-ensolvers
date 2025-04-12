@@ -62,7 +62,7 @@ test.describe("Account Management", () => {
   });
 });
 
-test.describe("🔒 Session Flow", () => {
+test.describe("Session Flow", () => {
   test("Log out successfully", async ({ page }) => {
     await logout(page);
   });

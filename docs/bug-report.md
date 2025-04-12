@@ -102,6 +102,28 @@ https://qa-challenge.ensolvers.com/api/register
 
 **Environment:** https://qa-challenge.ensolvers.com — Chrome 123.0 on macOS.
 
+### [Bug] Settings form allows repeated saves without visible UI update
+
+**Description:**  
+When accessing the Settings page via the Account menu, the user can repeatedly click "Save" without modifying any input values. Despite no changes being made, a success message ("Settings saved!") is displayed each time. This behavior can be misleading, as the feedback does not reflect whether an actual update occurred.
+
+Furthermore, uploading the same profile image multiple times and clicking "Save" also triggers the same confirmation, even if the backend does not apply any changes.
+
+**Relevant Links:**
+https://qa-challenge.ensolvers.com/account/settings
+https://qa-challenge.ensolvers.com/api/account
+
+**Steps to reproduce:**
+
+1. Navigate to the logged-in dashboard.
+2. Click on Account → Settings.
+3. Without changing any form values, click the Save button.
+4. Observe that a toast message appears: "Settings saved!".
+5. Optionally, upload the same profile image as the current one and save again.
+6. Repeat steps — each time, the same success message is shown even though no change occurs.
+
+**Environment:** https://qa-challenge.ensolvers.com — Chrome 123.0 on macOS.
+
 ---
 
 ## Usability Feedback

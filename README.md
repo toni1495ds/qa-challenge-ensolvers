@@ -81,3 +81,13 @@ npx playwright test tests/CreateToDo/index.ts
 - Tested on Chrome `v123`, macOS
 
 ✅ Feel free to fork, extend, or adapt the flow to your own QA process.
+
+## Test Suite Result
+
+<img src="./assets/tests-passing.png" alt="All tests passing" width="700" />
+
+---
+
+## Demo Video
+
+<video src="./assets/SuiteCompleted.mov" width="700" controls autoplay muted loop></video>

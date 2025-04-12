@@ -3,13 +3,16 @@ import { Page, expect } from "@playwright/test";
 export async function createFolder(page: Page) {
   const folderName = "Projects";
 
-  // STEP: Go to "Manage Folders"
-  const manageFoldersButton = page
-    .getByRole("button")
-    .filter({ hasText: "Manage Folders" })
-    .first();
-  await manageFoldersButton.waitFor({ state: "visible" });
-  await manageFoldersButton.click();
+  // STEP: Ensure we're on the "Manage Folders" page
+  const manageFolderUrl = /.*\/folder.*/;
+  if (!manageFolderUrl.test(page.url())) {
+    const manageFoldersButton = page
+      .getByRole("button")
+      .filter({ hasText: "Manage Folders" })
+      .first();
+    await manageFoldersButton.waitFor({ state: "visible" });
+    await manageFoldersButton.click();
+  }
 
   // STEP: Click "Create new Folder"
   const createFolderLink = page
